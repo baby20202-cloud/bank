@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup - Step 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="signupForm">
+      <h2>Signup - Step 1</h2>
+      <div class="input-group"><input type="text" id="firstName" required><label>First Name</label></div>
+      <div class="input-group"><input type="text" id="middleName"><label>Middle Name</label></div>
+      <div class="input-group"><input type="text" id="lastName" required><label>Last Name</label></div>
+      <div class="input-group"><input type="email" id="gmail" required><label>Gmail</label></div>
+      <div class="input-group"><input type="password" id="password" required><label>Password</label></div>
+      <div class="input-group"><input type="tel" id="number" required><label>Phone Number</label></div>
+      <button type="submit">Next</button>
+    </form>
+    <div id="toast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

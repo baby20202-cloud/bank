@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup - Step 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="paymentForm">
+      <h2>Signup - Step 3: Payment Info</h2>
+      <div class="input-group"><input type="text" id="cardName" required><label>Cardholder Name</label></div>
+      <div class="input-group"><input type="text" id="cardNumber" required><label>Card Number</label></div>
+      <div class="input-group"><input type="month" id="expDate" required><label style="top: -20px;">Expiration Date</label></div>
+      <div class="input-group"><input type="text" id="cvv" required><label>CVV</label></div>
+      <div class="input-group">
+        <select id="paymentMethod" required>
+          <option value="" disabled selected>Select Payment Method</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="PayPal">PayPal</option>
+          <option value="Apple Pay">Apple Pay</option>
+          <option value="Bank Transfer">Bank Transfer</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="toast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
